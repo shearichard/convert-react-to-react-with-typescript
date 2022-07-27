@@ -1,13 +1,25 @@
+import { useState } from 'react';
 import TodoItem from './todoitem.jsx'
 
 
+const DEFAULT_TODO_ITEMS = [
+  { id: 1, text: 'Convert my App to TypeScript' },
+  { id: 2, text: 'Get a coffee' },
+  { id: 3, text: 'Meditate' } 
+];
+
 const Todo = () => {
+
+    const [todoitems, setTodoItems] = useState(DEFAULT_TODO_ITEMS);
+
     return(
         <div style={{color: "blue", padding:"1em", border:"solid"}} >
             <h2>List of things to do</h2>
-            <TodoItem id={1} text={"First todo item"} />
-            <TodoItem id={2} text={"Second todo item"} />
-            <TodoItem id={3} text={"Third todo item"}/>
+            <div className="todo__items">
+                {todoitems.map(t => (
+                    <TodoItem key={t.id} id={t.id} text={t.text} />
+                ))}
+            </div>
         </div>
     )
 }

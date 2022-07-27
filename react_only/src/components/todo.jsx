@@ -4,8 +4,10 @@ import TodoItem from './todoitem.jsx'
 const Todo = () => {
     return(
         <div style={{color: "blue", padding:"1em", border:"solid"}} >
-            <p>This is an instance of the Todo component</p>
-            <TodoItem />
+            <h2>List of things to do</h2>
+            <TodoItem id={1} text={"First todo item"} />
+            <TodoItem id={2} text={"Second todo item"} />
+            <TodoItem id={3} text={"Third todo item"}/>
         </div>
     )
 }

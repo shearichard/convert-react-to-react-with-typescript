@@ -12,12 +12,14 @@ const Todo = () => {
 
     const [todoitems, setTodoItems] = useState(DEFAULT_TODO_ITEMS);
 
+    const deleteTodoItem = id => setTodoItems([...todoitems.filter(i => i.id !== id)]);
+
     return(
         <div style={{color: "blue", padding:"1em", border:"solid"}} >
             <h2>List of things to do</h2>
             <div className="todo__items">
                 {todoitems.map(t => (
-                    <TodoItem key={t.id} id={t.id} text={t.text} />
+                    <TodoItem key={t.id} id={t.id} text={t.text} onDelete={deleteTodoItem} />
                 ))}
             </div>
         </div>

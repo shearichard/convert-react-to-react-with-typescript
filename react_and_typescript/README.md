@@ -1,4 +1,4 @@
-# React and Typescript
+# Converting from pure React to React+Typescript
 
 ## What do we need to do ? 
 *This is a tentative list, we may find other things as we go along.* 

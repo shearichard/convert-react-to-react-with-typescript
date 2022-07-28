@@ -1,6 +1,8 @@
 # Convert React to React with Typescript
 This repos is to support a demonstration of the process of converting a React App to a React App with Typescript.
 
+The intention is to take an app which is sufficiently simple that we can look at the entire process of conversion within the course of a single workshop. Inevitably the problem at hand is .... todos !
+
 ![Screen dump of the 0.5 version](https://github.com/shearichard/convert-react-to-react-with-typescript/blob/main/images/react-ts-home-page-screen-dump.png?raw=true)
 
 ## Credit

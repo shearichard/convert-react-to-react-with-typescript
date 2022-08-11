@@ -8,6 +8,7 @@
    * Clone the existing project 
    * `npm install` the typescript libraries as shown [here](https://create-react-app.dev/docs/adding-typescript/#installation).  
    * Rename all `.js` so that they have a `.tsx` suffix.
+   * Change imports to reflect the change of suffix (where necessary).
    * Where external libraries are used it's necessary to ensure that they have declaration files which contain definitions of the types used the library. 
 
 ### Code Level

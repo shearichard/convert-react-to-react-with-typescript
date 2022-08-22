@@ -19,7 +19,7 @@ const Todo = () => {
     const [todoitems, setTodoItems] = useState(DEFAULT_TODO_ITEMS);
     const [inputTodoValue, setInputTodoValue] = useState('');
 
-    const deleteTodoItem = id => setTodoItems([...todoitems.filter(i => i.id !== id)]);
+    const deleteTodoItem = (id:number) => setTodoItems([...todoitems.filter(i => i.id !== id)]);
 
     return(
         <div style={{color: "blue", padding:"1em", border:"solid"}} >

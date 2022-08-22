@@ -3,6 +3,11 @@ import { useState } from 'react';
 import TodoItem from './todoitem'
 
 
+interface ToDoIt {
+  id: number;
+  text: string;
+}
+
 const DEFAULT_TODO_ITEMS = [
   { id: 1, text: 'Convert my App to TypeScript' },
   { id: 2, text: 'Get a coffee' },

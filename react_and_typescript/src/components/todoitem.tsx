@@ -1,6 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types';
 
+interface Props {
+    id: number;
+    text: string;
+    onDelete: Function;
+}
+
 const TodoItem = ({id, text, onDelete}) => {
     return (
         <div style={{color: "red",  padding: "1em", margin: "0.5em" , border:"solid"}} >

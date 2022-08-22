@@ -8,7 +8,7 @@ interface ToDoIt {
   text: string;
 }
 
-const DEFAULT_TODO_ITEMS = [
+const DEFAULT_TODO_ITEMS:ToDoIt[] = [
   { id: 1, text: 'Convert my App to TypeScript' },
   { id: 2, text: 'Get a coffee' },
   { id: 3, text: 'Meditate' } 
@@ -16,8 +16,8 @@ const DEFAULT_TODO_ITEMS = [
 
 const Todo = () => {
 
-    const [todoitems, setTodoItems] = useState(DEFAULT_TODO_ITEMS);
-    const [inputTodoValue, setInputTodoValue] = useState('');
+    const [todoitems, setTodoItems] = useState<ToDoIt[]>(DEFAULT_TODO_ITEMS);
+    const [inputTodoValue, setInputTodoValue] = useState<string>('');
 
     const deleteTodoItem = (id:number): void => setTodoItems([...todoitems.filter(i => i.id !== id)]);
 

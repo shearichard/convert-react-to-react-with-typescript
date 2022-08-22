@@ -1,3 +1,4 @@
+import React from 'react'
 import PropTypes from 'prop-types';
 
 const TodoItem = ({id, text, onDelete}) => {

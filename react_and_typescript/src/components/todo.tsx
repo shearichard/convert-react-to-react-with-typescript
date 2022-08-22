@@ -1,5 +1,6 @@
+import React from 'react'
 import { useState } from 'react';
-import TodoItem from './todoitem.jsx'
+import TodoItem from './todoitem'
 
 
 const DEFAULT_TODO_ITEMS = [

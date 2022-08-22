@@ -7,13 +7,13 @@ interface Props {
     onDelete: Function;
 }
 
-const TodoItem = ({id, text, onDelete}) => {
+const TodoItem = (props: Props) => {
     return (
         <div style={{color: "red",  padding: "1em", margin: "0.5em" , border:"solid"}} >
-            <p id={id}>
-                <button onClick={() => onDelete(id)}>DELETE</button>
+            <p id={props.id.toString()}>
+                <button onClick={() => props.onDelete(props.id)}>DELETE</button>
                 &nbsp; 
-                {text} 
+                {props.text} 
             </p>
         </div>            
     )
